@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trikato-Italian Foods</title>
+    <style>
+        
+.etiqueta-pasta {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 300 !important;          /* La hace delgada como el logo */
+    font-style: italic !important;        /* La hace itálica */
+    text-transform: uppercase !important; /* La pone en mayúsculas */
+    letter-spacing: 3px !important;       /* Separa las letras como el logo */
+    font-size: 10px;
+    color: #580505;                       /* El color tinto que elegiste */
+    display: block;
+    margin-top: 5px;
+    text-align: center;
+}
+
+        /* Estilos Generales */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+         font-family: 'Montserrat', sans-serif;
+         display: flex;
+        min-height: 100vh; 
+          background-color: #4d0202; }
+
+        /* Contenedor Izquierdo (Imagen) */
+        .hero-section {
+            flex: 1;
+            background: linear-gradient(rgba(46, 2, 2, 0.3), rgba(35, 1, 1, 0.3)), 
+                        url('https://www.pasta-garofalo.com/es/wp-content/uploads/sites/10/2023/08/pastas-recetas-italianas-Tagliatelle-al-Pesto-Genovese-1.jpeg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: red;
+            text-align: center;
+            padding: 20px;
+        }
+        .logo-box { background: rgba(255,255,255,0.9); 
+            padding: 20px;
+             border-radius: 50%; 
+             width: 150px; height: 150px; 
+             display: flex; 
+             flex-direction: column; 
+             justify-content: center;
+              margin-bottom: 20px; 
+              border: 4px solid #8a1c1c; }
+        .logo-box h1 { color: #650909; font-size: 1.2rem; }
+
+        /* Contenedor Derecho (Formulario) */
+        .form-section {
+            flex: 1;
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: top;
+            background: rgb(255, 255, 255);
+        }
+        .form-header { 
+            text-align: center; 
+            margin-bottom: 30px;
+         }
+        .form-header h2 {
+             font-size: 2rem; 
+             color: #4f0606; 
+             font-style: italic; 
+            }
+        .price { 
+            color: #830b01d9;
+             font-size: 1.5rem; 
+             font-weight: bold; 
+             margin-top: 10px;
+             }
+
+        /* Estilos del Formulario */
+        form {
+             max-width: 450px;
+              margin: 0 auto;
+               width: 100%;
+             }
+        .field {
+             margin-bottom: 20px;
+             }
+        label { 
+            display: block; 
+            margin-bottom: 8px;
+             font-weight: 600; 
+             color: #555; 
+            }
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            outline: none;
+            transition: border 0.3s;
+        }
+        input:focus, select:focus { 
+            border-color: #8a1c1c;
+         }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #8a1c1c;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover { 
+            background-color: #631414;
+         }
+
+        /* 1. Alineación */
+.galeria-mini {
+    display: flex;         
+    justify-content: center; 
+    gap: 15px; 
+       }         
+
+/* 2. TAMAÑO UNIFORME */
+.item-pasta img {
+    width: 100px;          
+    position: relative; 
+}
+
+/* 3. CONTROL DE LA IMAGEN (Para que todas midan lo mismo) */
+.item-pasta img {
+    width: 100%;           
+    height: 100px;          
+    object-fit: cover;     
+    border-radius: 4px;   
+}
+.precio-oferta {
+    font-family: 'Montserrat', sans-serif !important;
+     text-align: center !important;
+     font-size: 1.5rem !important;
+     margin: 20px 0 !important;     /* Espacio arriba y abajo */
+    padding: 10px 0; 
+    display: block !important;
+    border-top: 1px solid #440303;    /* Línea decorativa arriba */
+    border-bottom: 1px solid #440303; /* Línea decorativa abajo */
+
+}
+  
+    </style>
+</head>
+<body>
+
+    <div class="hero-section">
+        <div class="logo-box">
+            <h1>TRIKATO</h1>
+            <p style="color: #550505; font-size: 0.7rem;">ITALIAN FOOD</p>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <div class="form-header">
+            <h2>Realiza tu pedido</h2>
+            <p class="price">Selecciona la pasta</p>
+        </div>
+        <div class="galeria-mini">
+    <div class="item-pasta">
+        <img src="Penne.jpg" > 
+        <span class="etiqueta">Penne</span>
+    </div>
+    <div class="item-pasta">
+        <img src="Fusilli.avif" >
+        <span class="etiqueta">Fusilli</span>
+    </div>
+    <div class="item-pasta">
+        <img src="Lasagna.jpg" alt="Lasagna">
+        <span class="etiqueta">Lasagna</span>
+        </div>
+    </div>
+<p class="precio-oferta">Todas las pastas a $185.00</p>
+
+<form id="Formulario-pedido">
+    <select name="Pastas">
+        <option value="Penne">Penne</option>
+        <option value="Fusilli">Fusilli</option>
+        <option value="Lasagna">Lasagna</option>
+    </select>
+</form>
+
+<p></p>
+   </style>
+</head>
+<body>
+
+    <form id="miformulario">
+        <label for="apellidos"> Apellidos:</label><br>
+        <input type="text" id="apellidos" name="apellidos" required><p></p>
+
+        <label for="nombres"> Nombres:</label><br>
+        <input type="text" id="nombres" required><p></p>
+
+        <label for="telefono"> Tel&eacute;fono:</label><br>
+        <input type="tel" id="telefono" name="telefono" required><p></p>
+
+        <label for="direccion">Direcci&oacute;n:</label><br>
+        <input type="direccion" id="direccion" name="direccion" required><p></p>
+        
+        <label for="correo"> Correo electr&oacute;nico:</label><br>
+        <input type="email" id="correo" name="correo" required><p></p>
+
+        <button type="submit"> Enviar </button>
+    </form>
+    <p class="mensaje" id="mensaje"></p>
+
+    <script>
+        const url="https://script.google.com/macros/s/AKfycbyLCBYasTfQpUEM0feWNlxQoAsyxbulZJJWxS2eyUc3kzKjqweYIBj2GXrwkiqtxrgs4g/exec"
+        document.getElementById("miformulario")
+        .addEventListener("submit", function(e){
+
+            e.preventDefault();
+
+            const datos = {
+                apellidos: document.getElementById("apellidos").value,
+                nombres: document.getElementById("nombres").value,
+                telefono: document.getElementById("telefono").value,
+                direccion: document.getElementById("direccion").value,
+                correo: document.getElementById("correo").value
+                
+            };
+
+            fetch(url, {
+                method: "POST", 
+                body: JSON.stringify(datos)
+            })
+
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById("mensaje").innerHTML =
+                "Datos guardados correctamente";
+                document.getElementById("miformulario").reset();
+            })
+            .catch(error => {
+                document.getElementById("mensaje").innerHTML =
+                "Error al guardar";
+            });
+
+        });
+    </script>
+</body>
+</html>
